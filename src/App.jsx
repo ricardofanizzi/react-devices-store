@@ -5,9 +5,9 @@ import styles from './styles/App.module.css';
 
 const App = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Header />
-      <div className={styles.appContainer}>
+      <div className={styles.app__container}>
         <Router />
       </div>
     </div>

@@ -1,0 +1,61 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: white;
+  max-width: 15em;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.card a {
+  text-decoration: none;
+  color: rgba(77, 77, 77);
+}
+
+.card:hover {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.card__header {
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.card__image {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card__tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.card__price {
+  font-size: 0.9em;
+  font-weight: bold;
+}

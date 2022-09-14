@@ -1,8 +1,5 @@
-.container {
-  width: 100%;
-}
-
-.appContainer {
+.app__container {
+  display: flex;
   width: 80%;
   margin: 8em auto 0 auto;
 }
