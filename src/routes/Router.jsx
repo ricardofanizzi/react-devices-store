@@ -1,19 +1,21 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import DeviceDetail from '../pages/device-detail/DeviceDetail';
 import Devices from '../pages/devices/Devices';
 import Error404 from '../pages/error404/Error404';
+import { NAVIGATION } from './navigation.const';
 
 const Router = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Devices />}></Route>
-        <Route path="devices/:id" element={<DeviceDetail />}></Route>
-        <Route path="devices" element={<Devices />}></Route>
-        <Route path="*" element={<Error404 />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<Devices />} />
+      <Route
+        path={`${NAVIGATION.DEVICES}/:deviceId`}
+        element={<DeviceDetail />}
+      />
+      <Route path={`${NAVIGATION.DEVICES}`} element={<Devices />} />
+      <Route path="*" element={<Error404 />} />
+    </Routes>
   );
 };
 
