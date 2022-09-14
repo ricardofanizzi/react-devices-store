@@ -7,7 +7,9 @@ const App = () => {
   return (
     <div className={styles.container}>
       <Header />
-      <Router />
+      <div className={styles.appContainer}>
+        <Router />
+      </div>
     </div>
   );
 };
