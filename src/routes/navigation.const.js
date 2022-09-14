@@ -1,4 +1,4 @@
 export const NAVIGATION = {
-  DEVICES: '/devices',
+  PRODUCTS: '/products',
   ERROR_404: '/error404',
 };

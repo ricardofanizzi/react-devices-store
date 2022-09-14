@@ -1,19 +1,19 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import DeviceDetail from '../pages/device-detail/DeviceDetail';
-import Devices from '../pages/devices/Devices';
 import Error404 from '../pages/error404/Error404';
+import ProductDetail from '../pages/product-detail/ProductDetail';
+import Products from '../pages/products/Products';
 import { NAVIGATION } from './navigation.const';
 
 const Router = () => {
   return (
     <Routes>
-      <Route exact path="/" element={<Devices />} />
+      <Route exact path="/" element={<Products />} />
       <Route
-        path={`${NAVIGATION.DEVICES}/:deviceId`}
-        element={<DeviceDetail />}
+        path={`${NAVIGATION.PRODUCTS}/:productId`}
+        element={<ProductDetail />}
       />
-      <Route path={`${NAVIGATION.DEVICES}`} element={<Devices />} />
+      <Route path={`${NAVIGATION.PRODUCTS}`} element={<Products />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
   );

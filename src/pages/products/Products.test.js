@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import Devices from './Devices';
+import Products from './Products';
 
-describe('Devices', () => {
+describe('Products', () => {
   it('must exist', () => {
-    const component = render(<Devices />);
+    const component = render(<Products />);
   });
 });
