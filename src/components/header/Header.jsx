@@ -7,16 +7,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => {
   return (
-    <header className={styles.headerContainer}>
+    <header className={styles.header__container}>
       <Link to={'/'}>
-        <h1 className={styles.headerTitle}>Device Store</h1>
+        <h1 className={styles.header__title}>Device Store</h1>
       </Link>
-      <div className={styles.shoppingCart}>
+      <div className={styles.shopping__cart}>
         <FontAwesomeIcon
-          className={styles.shoppingCartIcon}
+          className={styles.shopping__cart_icon}
           icon={faShoppingCart}
         />
-        <span>0</span>
+        <span className={styles.shopping__cart_number}>2</span>
       </div>
     </header>
   );

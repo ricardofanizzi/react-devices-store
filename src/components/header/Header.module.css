@@ -1,4 +1,4 @@
-.headerContainer {
+.header__container {
   width: 100%;
   height: 5em;
   position: fixed;
@@ -12,15 +12,37 @@
   box-shadow: 0.5em 2em 3em -1.5em rgba(235, 235, 235, 1);
 }
 
-.headerTitle {
+.header__container a {
+  text-decoration: none;
 }
 
-.shoppingCart {
+.header__title {
+  color: white;
+  font-weight: bold;
+  font-size: 2.2em;
+  background-image: linear-gradient(to right, #393939 45%, #000000);
+  padding: 0.2em;
+}
+
+.shopping__cart {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 2em;
+  color: rgb(77, 77, 77);
 }
 
-.shoppingCartIcon {
+.shopping__cart_icon {
+  position: absolute;
+  font-size: 1.5em;
+}
+
+.shopping__cart_number {
+  color: #c70000;
+  position: absolute;
+  right: -0.25em;
+  top: -1em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
