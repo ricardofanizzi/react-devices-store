@@ -5,8 +5,13 @@
 
 .product__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product__card_container {
-  width: 18%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  width: 18em;
 }
