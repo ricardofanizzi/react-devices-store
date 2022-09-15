@@ -1,3 +1,29 @@
-.searcher {
-  width: 6em;
+.searcher__container {
+  height: 2em;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  border: 2px solid rgb(77, 77, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searcher__container:hover > .searcher__input {
+  width: 10em;
+  padding: 0 10px;
+}
+
+.searcher__input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 7em;
+  transition: ease-in 0.4s;
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+
+.searcher__icon {
+  padding: 0 0.5em;
 }

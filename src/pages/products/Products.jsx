@@ -7,9 +7,9 @@ import styles from './Products.module.css';
 const Products = () => {
   const { productList } = useProducts();
   return (
-    <div className={styles.container}>
-      <section className={styles.header}>
-        <h3>LIST VIEW</h3>
+    <div className={styles.product__container}>
+      <section className={styles.product__header}>
+        <h3 className={styles.product__title}></h3>
         <Searcher />
       </section>
       <ProductList productList={productList} />

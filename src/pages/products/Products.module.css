@@ -1,9 +1,9 @@
-.container {
-  width: 100%;
+.product__container {
 }
 
-.header {
+.product__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 5%;
 }
