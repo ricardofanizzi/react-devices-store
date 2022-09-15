@@ -9,11 +9,9 @@
   max-width: 15em;
   cursor: pointer;
   transition: 0.3s;
-  text-decoration: none;
 }
 
 .card a {
-  text-decoration: none;
   color: rgba(77, 77, 77);
 }
 

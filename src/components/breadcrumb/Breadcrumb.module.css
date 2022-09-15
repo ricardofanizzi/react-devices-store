@@ -1,0 +1,27 @@
+.breadcrumb__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.2em;
+  height: 2em;
+}
+
+.breadcrumb__list {
+  display: flex;
+  border-radius: 0.5em;
+}
+
+.breadcrumb__item {
+  cursor: pointer;
+  padding: 0.5em;
+  margin: 0.1em;
+}
+
+.breadcrumb__item a {
+  font-weight: bold;
+  color: rgb(77, 77, 77);
+}
+
+.breadcrumb__item a:hover {
+  color: rgb(127, 8, 8);
+}
