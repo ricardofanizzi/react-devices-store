@@ -4,7 +4,7 @@ import { getProductList } from '../services/products';
 import { initProductList } from '../states/products/productSlice';
 
 export const useProducts = () => {
-  const productList = useSelector(({ products }) => products);
+  const productList = useSelector(({ products }) => products.filteredProducts);
   const dispatch = useDispatch();
 
   useEffect(() => {
